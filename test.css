@@ -1,0 +1,61 @@
+body{
+    background:linear-gradient(to right bottom,#cc2b5e , #753a88);
+    display: grid ;
+    place-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+table{
+    background-color: #cc2b5e;
+    /* width: 80%; */
+    text-align: center;
+    box-shadow: 10px 15px 10px 15px #753a88;
+}
+td{
+    width: 15vh;
+    height: 10vh;
+    /* width: 10%; */
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    background-color: #af5cca;
+    text-shadow: 0 0 5px #ff8000, 0 0 5px #0000FF;
+}
+h1{
+    text-shadow: 6px 4px 5px #ff8000, 0 0 5px #0000FF;  
+}
+.line{
+    width: 100%;
+    height: 4px;
+    border-radius: 25%;
+    background: linear-gradient(to right,rgb(50, 209, 50) ,rgb(255, 0, 0));
+}
+.point{
+    background-color: rgb(14, 237, 33);
+   border-radius: 100%;
+    width: 4px;
+    height: 15px;
+    border: 2px solid green;
+}
+.block{
+    pointer-events: none;
+    margin-top: 20%;
+}
+.block::before{
+    content: "Game Over";
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(167, 3, 3);   
+}
+.win{
+    pointer-events: none;
+    margin-top: 20%;
+}
+.win::before{
+    content: "Win game";
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(5, 107, 14);   
+}
+
