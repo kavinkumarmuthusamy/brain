@@ -49,7 +49,7 @@ if(s){
     console.log(    document.getElementsByClassName("block").className);
     setTimeout(function(){
         // document.getElementById("block").className="bloc";
-        location.reload();
+        window.location.href="brain2.html"
     },5000)
 }
 }
